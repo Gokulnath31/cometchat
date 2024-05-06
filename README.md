@@ -1,4 +1,4 @@
-# Perxcept Admin Portal
+# Cometchat
 
 ## Prerequisites 
 node > 18 | npm > 8 
