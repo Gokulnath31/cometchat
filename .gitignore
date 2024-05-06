@@ -1,0 +1,30 @@
+/node_modules/
+/public/build/
+.DS_Store
+.vscode/
+.env
+# production
+dist/
+tmp/
+**/.css/
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# node-waf configuration
+.lock-wscript
+
+# misc
+.DS_Store
+.builds/
+.eslintcache
+**/.sass-cache
+
+#mockserver
+/mock-server/node_modules/
+/mock-server/uploads/
+
+# svelte routify
+.routify
+

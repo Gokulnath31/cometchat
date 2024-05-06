@@ -1,0 +1,44 @@
+@import "./abstracts/_mixins.scss";
+
+@import "./_fonts.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:hover {
+    outline: none;
+}
+
+:root {
+    font-size: 62.5% !important;
+    --rem: 10;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  width: 100%;
+  font-family: "Satoshi-Variable", sans-serif;
+  font-size: 16px;
+  background-color: rgba(10, 9, 20, 1);
+  color: white;
+}
+
+.btn {
+  border: 0;
+  margin: 0;
+  outline: 0;
+	background-color: transparent;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
