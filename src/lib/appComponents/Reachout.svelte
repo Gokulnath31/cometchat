@@ -2,7 +2,7 @@
 	import Button from "@components/Button/Button.svelte";
 
 </script>
-<section class='section'>
+<section class='section' id='reachout'>
     <div class="container">
         <h1>Get started for free</h1>
         <p>

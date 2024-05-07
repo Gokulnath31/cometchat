@@ -25,10 +25,20 @@ body,
 #app {
   min-height: 100%;
   width: 100%;
-  font-family: "Satoshi-Variable", sans-serif;
   font-size: 16px;
   background-color: rgba(10, 9, 20, 1);
   color: white;
+}
+
+body {
+  font-family: "Satoshi-Variable", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
 }
 
 .btn {

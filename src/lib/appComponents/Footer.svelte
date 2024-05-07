@@ -6,7 +6,7 @@
         import LinkedInIcon from '@icons/linkedin.svg';
         import TwitterIcon from '@icons/twitter.svg';
 </script>
-<section class='section'>
+<section class='section' id='footer'>
     <div class="container">
         <div class='items-list'>
             <div class='items' id='tech'>

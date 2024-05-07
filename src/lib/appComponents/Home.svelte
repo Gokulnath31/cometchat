@@ -91,7 +91,7 @@
 
     input {
         width: 100%;
-        padding: 1rem;
+        padding: 0.8rem 1rem 1rem;
         max-width: 90rem;
         height: 4rem;
         border-radius: 14px;
@@ -100,9 +100,9 @@
         color: white;
     }
 
-    .fontAwesome {
-        font-family: Helvetica, 'FontAwesome', sans-serif;
-    }
+    // .fontAwesome {
+    //     font-family: Helvetica, 'FontAwesome', sans-serif;
+    // }
     .clients {
         width: 100%;
         padding: 4rem 0;

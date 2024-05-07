@@ -6,19 +6,27 @@
 <nav>
     <ul class='nav-items'>
         <li class="logo"><img src={Logo} alt='comet-chat'/></li>
-        <li class='section'>Platform</li>
-        <li class='section'>Solutions</li>
-        <li class='section'>Developers</li>
-        <li class='section'>Resources</li>
-        <li class='section'>Pricing</li>
+        <li class='section'><a href="#footer">Platform</a></li>
+        <li class='section'><a href="#footer">Solutions</a></li>
+        <li class='section'><a href="#footer">Developers</a></li>
+        <li class='section'><a href="#footer">Resources</a></li>
+        <li class='section'><a href="#reachout">Pricing</a></li>
         <li class='login'>Log in</li>
         <li class='section'><Button text='Schedule a demo'/></li>
     </ul>
 </nav>
 
 <style lang="scss">
+    a {
+        text-decoration:none; 
+        color: white;
+    }
     .nav-items {
         margin: 3rem;
+
+        li:hover {
+            cursor: pointer;
+        }
     }
     ul { 
         list-style: none; 
