@@ -41,17 +41,28 @@
         padding: 10rem 4rem;
         text-align: center;
 
-          
-        background-image: url('../../assets/icons/stars.svg'), 
-            url('../../assets/icons/comet-purple.svg'), 
-            url('../../assets/icons/comet-orange.svg');
-        background-position: center, left bottom, right top;
+        background-image: url('../../assets/images/bg-stars.svg'), 
+            url('../../assets/images/bg-blue-galaxy.svg'), 
+            url('../../assets/images/bg-comet-purple.svg'), 
+            url('../../assets/images/bg-comet-orange.svg');
+        background-position: center, center bottom, left bottom, right top;
         background-repeat: no-repeat, no-repeat, no-repeat;
+        background-blend-mode: multiply;
 
         &__actions {
             margin-top: 2rem;
         }
     }
 
+    @media screen and (max-width: 870px) {
+        .section {
+            background-image: url('../../assets/images/bg-stars.svg'), 
+                url('../../assets/images/bg-blue-galaxy.svg'), 
+                url('../../assets/images/bg-comet-pink-right.svg'), 
+                url('../../assets/images/bg-comet-orange-half.svg');
+            background-position: center, center bottom, left top, right bottom;
+        }
+       
+    }
 
 </style>

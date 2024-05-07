@@ -175,7 +175,7 @@
 <style lang="scss">
     .section {
         padding: 0 4rem;
-        background-image: url('../../assets/icons/stars.svg');
+        background-image: url('../../assets/images/bg-stars.svg');
         background-position: center top;
         background-repeat: no-repeat;
     }

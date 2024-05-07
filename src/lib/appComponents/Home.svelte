@@ -1,5 +1,6 @@
 <script>
     import Button from "@components/Button/Button.svelte";
+    import Logos from '@icons/logos.svg'
 </script>
 <section class='section'>
     <div class='container'>
@@ -28,6 +29,10 @@
         </div>
     </div>
 </section>
+<div class='clients'>
+    <img class='clients__logos' src={Logos} alt='clients' />
+</div>
+
 
 <style lang="scss">
     .container {
@@ -43,14 +48,14 @@
         margin: 0 auto;
         padding: 8rem 4rem;
 
-        background-image: url('../../assets/icons/stars.svg'),
-        url('../../assets/icons/Gradient.svg'), 
-            url('../../assets/icons/comet-mixed-orange.svg'), 
-            url('../../assets/icons/comet-purple-half.svg'),
-            url('../../assets/icons/comet-pink-half.svg'),
-            url('../../assets/icons/comet-purple-small.svg');
+        background-image: url('../../assets/images/bg-stars.svg'),
+        url('../../assets/images/bg-Gradient.svg'), 
+            url('../../assets/images/bg-comet-mixed-orange.svg'), 
+            url('../../assets/images/bg-comet-purple-half.svg'),
+            url('../../assets/images/bg-comet-pink-half.svg'),
+            url('../../assets/images/bg-comet-purple-small.svg');
         background-position: center, bottom, left, 0% 50%, 105% 85%, 50% 85%;
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-repeat: no-repeat, repeat-x, no-repeat, no-repeat,  no-repeat, no-repeat;
         background-blend-mode: multiply;
     }
 
@@ -93,10 +98,30 @@
         border: 1px solid #FAFAFF1A;
         color: white;
     }
+    .clients {
+        width: 100%;
+        padding: 4rem 0;
+        max-width: 100%;
+        overflow: hidden;
+        &__logos {
+    
+            object-fit: cover;
+        }
+    }
 
     @media screen and (max-width: 850px) {
         .container {
             flex-wrap: wrap;
+        }
+
+        .section {
+            background-image: url('../../assets/images/bg-stars.svg'),
+                url('../../assets/images/bg-Gradient.svg'), 
+                url('../../assets/images/bg-comet-purple-half.svg'),
+                url('../../assets/images/bg-comet-pink-half.svg');
+        background-position: center, bottom, 0% 50%, 120% 120%;
+        background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
+        background-blend-mode: multiply;
         }
     }
 
