@@ -18,7 +18,7 @@
             </label>
             <label>
                 Email address<br />
-                <input type="email" name="email" id="email" placeholder="Type your email...">
+                <input class='fontAwesome' type="email" name="email" id="email" placeholder="&#xf0e0; Type your email...">
             </label>
             <label>
                 Company's name<br />
@@ -91,6 +91,7 @@
 
     input {
         width: 100%;
+        padding: 1rem;
         max-width: 90rem;
         height: 4rem;
         border-radius: 14px;
@@ -98,13 +99,16 @@
         border: 1px solid #FAFAFF1A;
         color: white;
     }
+
+    .fontAwesome {
+        font-family: Helvetica, 'FontAwesome', sans-serif;
+    }
     .clients {
         width: 100%;
         padding: 4rem 0;
         max-width: 100%;
         overflow: hidden;
         &__logos {
-    
             object-fit: cover;
         }
     }
