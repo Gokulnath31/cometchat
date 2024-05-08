@@ -1,5 +1,6 @@
 <script>
         import CollapsibleList from '@components/CollapsibleList/CollapsibleList.svelte';
+        import Logo from '@icons/logo.svg'
         import FacebookIcon from '@icons/facebook.svg';
         import InstagramIcon from '@icons/instagram.svg';
         import GithubIcon from '@icons/github.svg';
@@ -8,6 +9,7 @@
 </script>
 <section class='section' id='footer'>
     <div class="container">
+        <span class="logo"><img src={Logo} alt='cometchat'/> </span>
         <div class='items-list'>
             <div class='items' id='tech'>
                 <CollapsibleList>
@@ -178,11 +180,15 @@
         background-image: url('../../assets/images/bg-stars.svg');
         background-position: center top;
         background-repeat: no-repeat;
+        background-blend-mode: multiply;
     }
     .container {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+    }
+    .logo {
+        padding-inline: 1rem;
     }
     .footer {
         display: flex;
@@ -213,7 +219,7 @@
             "tech . dev company"
             "tech . . .";
         justify-content: space-between;
-        margin: 8rem auto;
+        margin: 4rem auto;
     }
     #tech {
         grid-area: tech;
@@ -267,6 +273,19 @@
     }
 
     @media screen and (max-width: 890px) {
+        .logo {
+            display: inline-block;
+            width: 17rem;
+            height: 2.2rem;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+        .items-list {
+            margin: 1.5rem auto;
+        }
         .footer {
            flex-direction: column-reverse;
            align-items: center;
@@ -280,7 +299,12 @@
                 margin: 1rem;
             }
         }
+    }
 
-        
+    @media screen and (max-width: 420px) {
+        .section {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
     }
 </style>

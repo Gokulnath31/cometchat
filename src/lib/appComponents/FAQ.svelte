@@ -31,8 +31,8 @@
 <section class='section'>
     <div class="container">
         <div class='section__header'>
-            <span>FAQ</span>
-            <h1>
+            <span class='heading-tertiary'>FAQ</span>
+            <h1 class=heading-primary>
                 We want to help you with all your doubts 
             </h1>
         </div>
@@ -62,7 +62,7 @@
     .section {
         background-color: white;
         color: black;
-        padding: 8rem 4rem;
+        padding: 12rem 4rem;
 
         &__header {
             font-size: 2.5rem;
@@ -72,7 +72,6 @@
                 display: inline-block;
                 width: 100%;
                 text-align: center;
-                font-size: 2rem;
                 color: #FF7F3E;
             }
             h1 {
@@ -80,6 +79,13 @@
                 line-height: 1.2;
                 color: black;
             }
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .section {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
     }
 </style>

@@ -60,8 +60,8 @@
 <section class='section'>
     <div class="container">
         <div class='section__header'>
-            <span>Be a partner</span>
-            <h1>
+            <span class='heading-tertiary'>Be a partner</span>
+            <h1 class=heading-primary>
                 CometChat partner advantages
             </h1>
         </div>
@@ -90,8 +90,8 @@
     }
     .section {
         max-width: 100%;
-        padding: 0 4rem;
-        margin: 8rem auto;
+        padding: 12rem 4rem;
+        margin: 0 auto;
         background-color: rgba(10, 9, 20, 1);
 
         &__header {
@@ -99,7 +99,6 @@
             max-width: 100%;
             width: 600px;
             span {
-                font-size: 2rem;
                 color: #FF7F3E;
             }
             h1 {
@@ -143,14 +142,27 @@
     }
 
     @media screen and (max-width: 850px) {
+        .section {
+            padding-block: 3rem;
+        }
         .advantage {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
     @media screen and (max-width: 470px) {
+        .section {
+            padding-block: 2rem;
+        }
         .advantage {
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .section {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
     }
 </style>

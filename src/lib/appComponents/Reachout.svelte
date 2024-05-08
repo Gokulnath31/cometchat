@@ -4,7 +4,7 @@
 </script>
 <section class='section' id='reachout'>
     <div class="container">
-        <h1>Get started for free</h1>
+        <h1 class='heading-primary'>Get started for free</h1>
         <p>
             Build and test for as long as you need. 
         </p>
@@ -16,7 +16,6 @@
             <Button text='Schedule a demo'/>
         </div>
     </div>
-    
 </section>
 
 <style lang="scss">
@@ -26,7 +25,6 @@
         margin: 0 auto;
 
         h1 {
-            font-size: 4.8rem;
             margin-bottom: 5px;
         }
 
@@ -38,14 +36,14 @@
     }
     .section {
         margin: 0 auto;
-        padding: 10rem 4rem;
+        padding: 12rem 4rem;
         text-align: center;
 
         background-image: url('../../assets/images/bg-stars.svg'), 
             url('../../assets/images/bg-blue-galaxy.svg'), 
             url('../../assets/images/bg-comet-purple.svg'), 
             url('../../assets/images/bg-comet-orange.svg');
-        background-position: center, center bottom, left bottom, right top;
+        background-position: center, center bottom, 0% 150%, right top;
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-blend-mode: multiply;
 
@@ -56,6 +54,7 @@
 
     @media screen and (max-width: 870px) {
         .section {
+            padding-top: 2rem;
             background-image: url('../../assets/images/bg-stars.svg'), 
                 url('../../assets/images/bg-blue-galaxy.svg'), 
                 url('../../assets/images/bg-comet-pink-right.svg'), 
@@ -65,4 +64,10 @@
        
     }
 
+    @media screen and (max-width: 420px) {
+        .section {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
 </style>

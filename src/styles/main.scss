@@ -1,6 +1,7 @@
 @import "./abstracts/_mixins.scss";
 
-@import "./_fonts.scss";
+@import "./base/_typography.scss";
+@import "./base/_fonts.scss";
 
 *,
 *::after,
@@ -51,4 +52,3 @@ textarea {
 		cursor: pointer;
 	}
 }
-

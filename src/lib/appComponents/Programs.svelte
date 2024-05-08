@@ -24,8 +24,8 @@
 <section class='section'>
     <div class="container">
         <div class='section__header'>
-            <span>Our programs</span>
-            <h1>
+            <span class='heading-tertiary'>Our programs</span>
+            <h1 class=heading-primary>
                 Types of partnerships programs
             </h1>
         </div>
@@ -62,7 +62,6 @@
             max-width: 100%;
             width: 600px;
             span {
-                font-size: 2rem;
                 color: #6852D6;
             }
             h1 {
@@ -107,6 +106,9 @@
     }
 
     @media screen and (max-width: 780px) {
+        .section {
+            padding-block: 3rem;
+        }
         .program {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -114,12 +116,22 @@
 
 
     @media screen and (max-width: 530px) {
+        .sesction {
+            padding-block: 2rem;
+        }
         .program {
             grid-template-columns: 1fr;
 
             &__item {
                 max-width: 100%;
             }
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .section {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
     }
 </style>

@@ -5,8 +5,8 @@
 <section class='section'>
     <div class='container'>
         <div class='info'>
-            <h1>Join the CometChat partner universe </h1>
-            <span>
+            <h1 class=heading-primary>Join the CometChat partner universe </h1>
+            <span class='heading-tertiary'>
                 Create value for your clients, leveraging our world-class technology. Partner with us and grow your business!
             </span>
         </div>
@@ -46,7 +46,7 @@
 
     .section {
         margin: 0 auto;
-        padding: 8rem 4rem;
+        padding: 12rem 4rem;
 
         background-image: url('../../assets/images/bg-stars.svg'),
         url('../../assets/images/bg-Gradient.svg'), 
@@ -116,13 +116,21 @@
         }
 
         .section {
+            padding-block: 2rem;
             background-image: url('../../assets/images/bg-stars.svg'),
                 url('../../assets/images/bg-Gradient.svg'), 
                 url('../../assets/images/bg-comet-purple-half.svg'),
                 url('../../assets/images/bg-comet-pink-half.svg');
-        background-position: center, bottom, 0% 50%, 120% 120%;
-        background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
-        background-blend-mode: multiply;
+            background-position: center, bottom, 0% 50%, 120% 120%;
+            background-repeat: no-repeat, repeat-x, no-repeat, no-repeat;
+            background-blend-mode: multiply;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .section {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
         }
     }
 
